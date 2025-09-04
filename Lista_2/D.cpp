@@ -24,6 +24,17 @@ int main() {
     }
 
     vector<int> indices_onde_tem_0 = found_zero(v);
+
+    //-1 0 -1 -1 -1 -1 -1 -1 -1 -1 0 -1 -1
+    // 1 - 10 = 4 
+    //0 -1 -1 -1 -1 -1 -1 -1 0
+    //0 8 /2 = 4  
+    /*o que pode ser feito??
+    eu posso verificar os da esquerda do primeiro NÃO DA ERRO
+    eu posso pintar os da direita com os respectivos números até encontrar um 0
+    se eu encontrar um zero agora eu verifico a esquerda do novo 0 se os da esquerda será preenchido com um número maior ou igual eu não pinto o quadrado
+    1 0 1 2 3 4 3 2 1 0
+    */
     
     
 
