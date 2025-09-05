@@ -14,11 +14,6 @@ bool sobe(const vector<int> v){
             }
         }
     }
-
-    // cout << v.size()<< "\n" << up.size(); 
-    // for(int i = 0; i < up.size(); i++){
-    //     cout <<" ------------ "<< up[i] << "\n";
-    // }
     if(v.size() == up.size()){
         return true;
     }else return false;

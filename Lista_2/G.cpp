@@ -2,10 +2,6 @@
 
 using namespace std;
 
-// void check_vizinhos(const vector<int> a, int *v){
-
-// }
-
 int main() {
     ios::sync_with_stdio(false);
 
@@ -16,9 +12,15 @@ int main() {
     for(int i = 0; i < sequencia; i++){
         cin >> v[i];
     }
-    
-    // auto max = max_element(v.begin(), v.end());
-    // int maior = *max;
+
+    for(int i = 1 ; i < sequencia - 1; i++){
+        if(v[i - 1] > v[i] && v[i] < v[i+1]){
+            cout << "S" << endl; 
+            return 0;
+        }
+    }
+
+    cout << "N" << endl;
     return 0;
 
 }
